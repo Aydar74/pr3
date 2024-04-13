@@ -1,10 +1,59 @@
-﻿namespace pr3
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.WriteLine("Меню выбора:");
+        Console.WriteLine("- ввести А");
+        Console.WriteLine("- ввести В");
+        Console.WriteLine("- выполнить операцию '+'");
+        Console.WriteLine("- выполнить операцию '-'");
+        Console.WriteLine("- выполнить операцию '*'");
+        Console.WriteLine("- выполнить операцию '/'");
+
+        Console.Write("Введите ваш выбор: ");
+        string choice = Console.ReadLine();
+
+        switch (choice.ToUpper())
         {
-            Console.WriteLine("Hello, World!");
+            case "А":
+                Console.WriteLine("Вы выбрали ввести А.");
+                break;
+
+            case "В":
+                Console.WriteLine("Вы выбрали ввести В.");
+                break;
+
+            case "+":
+                Console.WriteLine("Вы выбрали выполнить операцию '+'.");
+                break;
+
+            case "-":
+                Console.WriteLine("Вы выбрали выполнить операцию '-'.");
+                break;
+
+            case "*":
+                Console.WriteLine("Вы выбрали выполнить операцию '*'.");
+                break;
+
+            case "/":
+                Console.WriteLine("Вы выбрали выполнить операцию '/'.");
+                break;
+
+            default:
+                Console.WriteLine("Неверный выбор. Пожалуйста, выберите пункт из меню.");
+                break;
+        }
+
+        Console.WriteLine("Нажмите любую клавишу для выхода...");
+        Console.ReadKey();
+    }
+    public class MenuFunctions
+    {
+        public void MenuFunction1()
+        {
+            // Код для функции меню A
         }
     }
 }
