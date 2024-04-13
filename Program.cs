@@ -56,4 +56,11 @@ class Program
             // Код для функции меню A
         }
     }
+    public class MenuFunctions2
+    {
+        public void MenuFunction2()
+        {
+            // Код для функции меню B
+        }
+    }
 }
